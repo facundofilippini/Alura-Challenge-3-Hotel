@@ -4,12 +4,13 @@ import java.sql.Date;
 public class Huesped {
 	
 
-	private Long id;
+	private Integer id;
 	private String nombre;
 	private String apellido;
 	private Date fechaDeNacimiento;
 	private String nacionalidad;
 	private String telefono;
+	private Integer reservaId;
 	
 	
 	public Huesped() {
@@ -25,10 +26,10 @@ public class Huesped {
 	}
 	
 	
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getNombre() {
@@ -60,6 +61,12 @@ public class Huesped {
 	}
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+	public Integer getreservaId() {
+		return reservaId;
+	}
+	public void setreservaId(Integer reservaId) {
+		this.reservaId = reservaId;
 	}
 	
 	

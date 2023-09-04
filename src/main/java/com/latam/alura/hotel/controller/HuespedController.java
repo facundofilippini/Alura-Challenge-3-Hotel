@@ -1,5 +1,5 @@
 package com.latam.alura.hotel.controller;
 
-public class HuepedController {
+public class HuespedController {
 
 }

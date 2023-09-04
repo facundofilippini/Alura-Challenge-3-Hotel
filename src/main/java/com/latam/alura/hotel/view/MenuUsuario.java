@@ -19,6 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.awt.SystemColor;
 import javax.swing.JSeparator;
+import com.toedter.calendar.JDateChooser;
 
 @SuppressWarnings("serial")
 public class MenuUsuario extends JFrame {

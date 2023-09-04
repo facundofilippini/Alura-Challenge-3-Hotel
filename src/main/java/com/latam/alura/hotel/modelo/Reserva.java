@@ -6,28 +6,40 @@ import java.sql.Date;
 public class Reserva {
 	
 
-	private Long id;
+	private Integer id;
 	private Date fechaEntrada;
 	private Date fechaSalida;
-	private Double Valor;
+	private String valor;
 	private String formaDePago;
+	
 	
 	public Reserva() {
 		
 	}
 	
-	public Reserva(Date fechaEntrada, Date fechaSalida, Double valor, String formaDePago) {
+	
+	public Reserva(Integer id, Date fechaEntrada, Date fechaSalida, String valor, String formaDePago) {
+		
+		this.id = id;
+		this.fechaEntrada = fechaEntrada;
+		this.fechaSalida = fechaSalida;
+		this.valor = valor;
+		this.formaDePago = formaDePago;
+	}
+
+
+	public Reserva(Date fechaEntrada, Date fechaSalida, String valor, String formaDePago) {
 		
 		this.fechaEntrada = fechaEntrada;
 		this.fechaSalida = fechaSalida;
-		Valor = valor;
+		this.valor = valor;
 		this.formaDePago = formaDePago;
 	}
 	
-	public Long getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public Date getFechaEntrada() {
@@ -42,11 +54,11 @@ public class Reserva {
 	public void setFechaSalida(Date fechaSalida) {
 		this.fechaSalida = fechaSalida;
 	}
-	public Double getValor() {
-		return Valor;
+	public String getValor() {
+		return valor;
 	}
-	public void setValor(Double valor) {
-		Valor = valor;
+	public void setValor(String valor) {
+		this.valor = valor;
 	}
 	public String getFormaDePago() {
 		return formaDePago;
